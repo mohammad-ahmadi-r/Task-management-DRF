@@ -82,7 +82,7 @@ class TaskViewSet(viewsets.ModelViewSet):
         search = self.request.query_params.get('search', None)
         if search:
             return Task.objects.filter(description__contains=search)
-        return super(TaskViewSet, self).get_queryset()
+        return Task.objects.filter(owner=self.request.user)
 
     def list(self, request, *args, **kwargs):
         queryset = self.filter_queryset(self.get_queryset())
