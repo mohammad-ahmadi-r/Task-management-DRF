@@ -19,15 +19,15 @@ Open the application in your web browser at <http://localhost:8000/> (for dev en
 # Task CRUD Operations
 Users can create, read, update, and delete tasks using RESTful endpoints.
 
-Create a new task: POST /tasks/
-Retrieve all tasks: GET /tasks/
-Retrieve a single task by ID: GET /tasks/{id}
-Update a task: PUT /tasks/{id}
-Delete a task: DELETE /tasks/{id}
-Email Verification
-The application uses email verification to ensure that user accounts are authenticated. 
-Then you will receive an email with a link to verify their account. Until the user clicks on this link, their account will be marked as unverified.
-POST /users/request-verification/  with username or email in body
+- Create a new task: POST /tasks/
+- Retrieve all tasks: GET /tasks/
+- Retrieve a single task by ID: GET /tasks/{id}
+- Update a task: PUT /tasks/{id}
+- Delete a task: DELETE /tasks/{id}
+- Email Verification
+- The application uses email verification to ensure that user accounts are authenticated. 
+- Then you will receive an email with a link to verify their account. Until the user clicks on this link, their account will be marked as unverified.
+- POST /users/request-verification/  with username or email in body
 
 # Like Option
 Users can mark tasks as "liked" by clicking on the heart icon next to each task. This feature uses a separate endpoint to handle likes.
@@ -44,20 +44,20 @@ Use bearer token to have access to your tasks and ...
 
 # Testing
 The application includes test cases for user registration, email sending. To run the tests, use the following command: 
-   python manage.py test users.tests.EmailRegistrationTest
-   python manage.py test users.tests.UserRegistrationTest 
+   - python manage.py test users.tests.EmailRegistrationTest
+   - python manage.py test users.tests.UserRegistrationTest 
 
 
 # API Endpoints
 Here are some examples of API endpoints available in the application:
 
-/tasks: Retrieves a list of all tasks
-/tasks/{id}: Retrieves a specific task by ID
-/tasks/like  "task_id":n -> Likes and Unlikes a task
+- /tasks: Retrieves a list of all tasks
+- /tasks/{id}: Retrieves a specific task by ID
+- /tasks/like  "task_id":n -> Likes and Unlikes a task
 
 # Technical Details
-The application is built using Django Rest Framework (DRF) and Python 3.10.
-The application uses Sqlite as its database.
+- The application is built using Django Rest Framework (DRF) and Python 3.10.
+- The application uses Sqlite as its database.
 
 
 # Contributing
