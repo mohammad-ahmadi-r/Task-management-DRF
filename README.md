@@ -10,7 +10,7 @@ The application has two environment modes:
 
 - Dev: This is the development environment, which is used for testing and debugging purposes.
 - Prod: This is the production environment, which is used for the live application.
-- 
+  
 ## Setting Up The Environment
 To set up the environment, follow these steps:
 
