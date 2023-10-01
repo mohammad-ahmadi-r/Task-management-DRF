@@ -25,6 +25,7 @@ class LoginView(APIView):
         return Response({'refresh': str(refresh), 'access': str(refresh.access_token)}, status=status.HTTP_200_OK)
 
 
+#TODO: apply an instant logout in server-side
 class LogoutView(APIView):
     def post(self, request):
         refresh_token = request.data.get('refresh')
@@ -83,6 +84,7 @@ class EmailVerificationRequestView(APIView):
         except:
             pass
 
+        #TODO: check if email is already verified or not
         # if user.is_active ==True:
         #     return Response({'detail': 'email already verified.'}, status=status.HTTP_200_OK)
 

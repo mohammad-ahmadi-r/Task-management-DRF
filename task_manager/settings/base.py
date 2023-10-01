@@ -26,15 +26,13 @@ INSTALLED_APPS = [
 
     'tasks',
     'rest_framework',
+    'rest_framework_simplejwt.token_blacklist',
     'users',
     'like',
 ]
 
 ROOT_URLCONF = 'task_manager.urls'
 WSGI_APPLICATION = 'task_manager.wsgi.application'
-
-CELERY_BROKER_URL = "redis://localhost:6379"
-CELERY_RESULT_BACKEND = "redis://localhost:6379"
 
 
 if MODE == ('production', 'staging'):
