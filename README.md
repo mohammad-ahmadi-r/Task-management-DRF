@@ -1,4 +1,4 @@
-##Task Management App
+## Task Management App
 ##Overview
 This is a task management application that allows users to create, read, update, and delete (CRUD) tasks. It also includes features such as email verification and the ability to mark tasks as "liked". The application uses Celery for background processing and JSON Web Tokens (JWT) for authentication.
 
